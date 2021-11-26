@@ -1,14 +1,15 @@
 const nsq = require('nsqjs')
 
-const w = new nsq.Writer('127.0.0.1', 4150);
 
 
 let i = 1;
 let interval = setInterval(function(){
+    const w = new nsq.Writer('127.0.0.1', 4150);
     let productName = 'Product '+i;
     w.connect()
     w.on('ready', () => {
         w.publish('new_product', productName);
+        w.close();
     });
         
     w.on('closed', () => {
