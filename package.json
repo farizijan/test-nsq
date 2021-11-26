@@ -1,0 +1,22 @@
+{
+  "name": "test-nsq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farizijan/test-nsq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farizijan/test-nsq/issues"
+  },
+  "homepage": "https://github.com/farizijan/test-nsq#readme",
+  "dependencies": {
+    "nsqjs": "^0.13.0"
+  }
+}
